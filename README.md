@@ -23,9 +23,42 @@ https://eipistar.dpdns.org/
 
 <img src="https://github.com/saeipi/KSChart/blob/master/Resources/memory.jpg" alt="memory占用率" width="800" height="458" align="middle"/>
 
-### 如果觉得好用就打个赏呗
-<img src="https://github.com/saeipi/KSChart/blob/master/Resources/Alipay.jpg" alt="Alipay" width="200" height="251" align="left"/>
-<img src="https://github.com/saeipi/KSChart/blob/master/Resources/WeChatPay.jpeg" alt="WeChatPay" width="200" height="275" align="middle"/>
+
+## 安装
+
+### Swift Package Manager (推荐)
+
+KSChart 现在支持 Swift Package Manager，使用单一代码库，无需维护两套代码：
+
+**在 Xcode 中：**
+1. 选择 `File > Swift Packages > Add Package Dependency...`
+2. 输入仓库URL：`https://github.com/Mephsito23/KSChart.git`
+3. 选择版本并点击 `Add Package`
+
+**在 Package.swift 中：**
+```swift
+dependencies: [
+    .package(url: "https://github.com/Mephsito23/KSChart.git", from: "5.1.10")
+]
+```
+
+**在代码中导入：**
+```swift
+import KSChart
+```
+
+### CocoaPods
+
+继续支持传统方式，在您的 `Podfile` 中添加：
+
+```ruby
+pod 'KSChart'
+```
+
+然后运行：
+```bash
+pod install
+```
 
 ## 开发环境
 - Xcode 11.0+

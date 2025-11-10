@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(swift package resolve:*)",
+      "Bash(swift build:*)",
+      "Bash(swift package describe:*)",
+      "Bash(swift package dump-package:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
